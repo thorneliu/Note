@@ -45,4 +45,39 @@ Double quotes will remove the special meaning of all characters except the follo
 * \$ Literal Dollar Sign.
 * \´ Literal Backquote.
 * \” Embedded Doublequote.
-* \\ Embedded Backslashes.`
+* \\ Embedded Backslashes.
+
+Examples:
+```
+[legend@legend01 ~]$ echo "print dollar sign \$"
+print dollar sign $
+[legend@legend01 ~]$
+
+```
+
+print the single quote:
+```
+[legend@legend01 ~]$ echo "print single quote 'some this wrong'"
+print single quote 'some this wrong'
+[legend@legend01 ~]$
+
+```
+
+Print the double quote:
+
+```
+[legend@legend01 ~]$ echo "print single quote "some this wrong""
+print single quote some this wrong
+[legend@legend01 ~]$ echo "print single quote \"some this wrong\""
+print single quote "some this wrong"
+
+```
+Print the black slash:
+
+
+```
+[legend@legend01 ~]$ echo "print black slash \\"
+print black slash \
+[legend@legend01 ~]$
+
+```
