@@ -1,0 +1,64 @@
+# git help everyday
+https://github.com/Gazler/githug
+http://pcottle.github.io/learnGitBranching/?demo
+https://git-scm.com/book/en/v2
+
+-Individual Developer (Standalone)
+==============================================
+1. git init
+	show the .git directory and stuff
+
+2. git add, git commit
+	2.1 add -- manage the index file
+	2.2 commit -- advance current branch
+	2.3 SHA1
+	
+3. git status, git show, git log, diff
+
+4. HEAD, HEAD^, HEAD^^, HEAD~4
+
+5. git rebase -i
+
+6. add/reset, checkout... moving around
+
+7. branch
+	7.1 git branch -b newBranch
+	7.2 git checkout master // move back to master
+	7.3 git branch -D xx // remove branch
+	7.4 working on branches, moving forward
+
+8. Merge and rebase branches
+
+9. git cherry-pick
+
+10. git blame
+
+Individual Developer (Participant)
+http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+==============================================
+1. git clone 
+
+2. git remove 
+	2.1 origin
+	2.2 git remote add <name> <url>
+	2.3 git remote rename
+
+3. git fetch
+    3.1 git fetch <hostname> <branchname> : git fetch origin master // git fetch Linsee bugfix
+    3.2 FETCH_HEAD = hostname/branchname  : git checkout FETCH_HEAD, git checkout -b newbranch FETCH_HEAD
+    3.3 git branch -r :  git checkout -b xx  origin/...
+
+4. git pull
+	4.1 git pull 
+	4.2 git pull origin bugfix:master == git fetch origin bugfix; git merge origin/bugfix
+	4.3 tracking 
+	$ git checkout -b xL18_PT4 origin/maintenance/xL18_PT4
+	Checking out files: 100% (6096/6096), done.
+	Switched to a new branch 'xL18_PT4'
+	Branch xL18_PT4 set up to track remote branch maintenance/xL18_PT4 from origin.
+	
+5. git pull --rebase 
+
+6. git push 
+	git push <hostname> CurrentBranch:remoteBrach
+	git push origin HEAD:refs/for/master
