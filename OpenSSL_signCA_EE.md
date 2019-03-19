@@ -117,5 +117,5 @@ openssl ca -batch -config ca.conf -days 36500 -notext -in eeCert/eecert.csr -out
 ```
 
 ## REFs
-https://raymii.org/s/tutorials/OpenSSL_command_line_Root_and_Intermediate_CA_including_OCSP_CRL%20and_revocation.html
-https://jamielinux.com/docs/openssl-certificate-authority/
+- https://raymii.org/s/tutorials/OpenSSL_command_line_Root_and_Intermediate_CA_including_OCSP_CRL%20and_revocation.html
+- https://jamielinux.com/docs/openssl-certificate-authority/
