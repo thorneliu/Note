@@ -119,3 +119,9 @@ openssl ca -batch -config ca.conf -days 36500 -notext -in eeCert/eecert.csr -out
 ## REFs
 - https://raymii.org/s/tutorials/OpenSSL_command_line_Root_and_Intermediate_CA_including_OCSP_CRL%20and_revocation.html
 - https://jamielinux.com/docs/openssl-certificate-authority/
+
+
+## Note
+verify certificate and key match
+openssl x509 -noout -modulus -in server_cert.pem | openssl md5
+openssl rsa -noout -modulus -in server_key.pem| openssl md5
